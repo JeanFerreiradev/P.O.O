@@ -13,25 +13,13 @@ public class Main {
 		System.out.println("[ 3 ] ???: ");
 		System.out.println("[ 4 ] ???: ");
 		System.out.println("[ 0 ] Subtotal da compra: ");
-		System.out.println("\n Digite a opção:");
+		System.out.println("\n Digite a opÃ§Ã£o:");
 
 		byte opcao = console.nextByte();
 		switch (opcao) {
 		case 1:
-			System.out.print("Id do produto: ");
-			produto.setIdProduto(console.nextLine());
-			console.nextLine();
-			System.out.print("\nNome: ");
-			produto.setNome(console.nextLine());
-			System.out.print("\nCategoria: ");
-			produto.setCategoria(console.nextLine());
-			System.out.print("\nPreço: ");
+		        System.out.print("\nPreÃ§o: ");
 			produto.setPreco(console.nextDouble());
-			System.out.print("\nMarca: ");
-			produto.setMarca(console.nextLine());
-			console.nextLine();
-			System.out.print("\nModelo: ");
-			produto.setModelo(console.nextLine());
 			System.out.print("\npeso: ");
 			produto.setPeso(console.nextDouble());
 			System.out.print("\nAltura: ");
@@ -40,6 +28,17 @@ public class Main {
 			produto.setComprimento(console.nextDouble());
 			System.out.print("\nLargura: ");
 			produto.setLargura(console.nextDouble());
+			console.nextLine();
+			System.out.print("\nId do produto: ");
+			produto.setIdProduto(console.nextLine());
+			System.out.print("\nNome: ");
+			produto.setNome(console.next());
+			System.out.print("\nCategoria: ");
+			produto.setCategoria(console.next());
+			System.out.print("\nMarca: ");
+			produto.setMarca(console.next());
+			System.out.print("\nModelo: ");
+			produto.setModelo(console.next());
 			break;
 		case 2:
 			System.out.println("Quantidade: ");
