@@ -18,7 +18,7 @@ public class Main {
 		byte opcao = console.nextByte();
 		switch (opcao) {
 		case 1:
-		        System.out.print("\nPreço: ");
+		    	System.out.print("\nPreço: ");
 			produto.setPreco(console.nextDouble());
 			System.out.print("\npeso: ");
 			produto.setPeso(console.nextDouble());
@@ -32,13 +32,13 @@ public class Main {
 			System.out.print("\nId do produto: ");
 			produto.setIdProduto(console.nextLine());
 			System.out.print("\nNome: ");
-			produto.setNome(console.next());
+			produto.setNome(console.nextLine());
 			System.out.print("\nCategoria: ");
-			produto.setCategoria(console.next());
+			produto.setCategoria(console.nextLine());
 			System.out.print("\nMarca: ");
-			produto.setMarca(console.next());
+			produto.setMarca(console.nextLine());
 			System.out.print("\nModelo: ");
-			produto.setModelo(console.next());
+			produto.setModelo(console.nextLine());
 			break;
 		case 2:
 			System.out.println("Quantidade: ");
